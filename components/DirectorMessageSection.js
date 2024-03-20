@@ -2,7 +2,7 @@
 import BlueBirdAnimation from "./small_components.js/BlueBirdAnimation"
 import { Tilt } from "react-tilt"
 import sirDirector1 from '../public/sirDirector1.png'
-import sirDirector2 from '../public/sirDirector2.JPG'
+import sirDirector2 from '../public/sirDirector2.jpg'
 import { useEffect, useState } from "react"
 
 
