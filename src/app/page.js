@@ -3,7 +3,7 @@ import CoursesSection from "../../components/CoursesSection";
 import DirectorMessageSection from "../../components/DirectorMessageSection";
 import HeroSection from "../../components/HeroSection";
 import { MouseMotion } from "../../components/MouseMotion";
-// import Query from "../../components/Query";
+import Query from "../../components/Query";
 import Footer from "../../components/Footer";
 import AboutSection from "../../components/AboutSection";
 import TeacherSection from "../../components/TeacherSection";
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      {/* <Query /> */}
+      <Query />
       <RevealSection> <CoursesSection /> </RevealSection>
       <RevealSection> <TeacherSection /> </RevealSection>
       <RevealSection> <DirectorMessageSection/> </RevealSection>
