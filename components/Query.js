@@ -27,9 +27,9 @@ const Query = () => {
     <section className="ftco-section ftco-no-pb ftco-no-pt">
 <motion.div
 className="container"
-initial={{ opacity: 0, scale: 0 }}
+initial={{ opacity: 1, scale: 0 }}
 whileInView={true}
-      animate={{ opacity: 1, scale: 1 }}
+      animate={{ opacity: 1, scale: 0.8 }}
       transition={{
         duration: 3,
         delay: 0,
@@ -37,8 +37,8 @@ whileInView={true}
       }}
 >
    <div className="row">
-      <div className="col-md-7"></div>
-      <div className="col-md-5 order-md-last">
+      <div className="col-lg-6"></div>
+      <div className="col-md-6">
     <Tilt options={{
         max: 10,
         scale: 1,

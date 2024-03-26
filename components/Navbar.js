@@ -11,7 +11,7 @@ const Navbar = () => {
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
    >
-     <a className="" href="index.html">
+     <a className="" href="/">
         <Image src={`/logo.png`} width={200} height={39} style={{maxWidth: "200px"}} alt="not working" />
      </a>
      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">

@@ -9,10 +9,13 @@ import AboutSection from "../../components/AboutSection";
 import TeacherSection from "../../components/TeacherSection";
 import RevealSection from "../../components/motionComponents/RevealSection";
 import StudentTestimony from "../../components/StudentTestimony";
+import ModalBackdrop from "../../components/bootstrapComponents/ModalBackdrop";
+import ResultSection from "../../components/resultComponents/resultSection";
 
 export default function Home() {
   return (
     <>
+      {/* <ModalBackdrop /> */}
       <HeroSection />
       <Query />
       <RevealSection> <CoursesSection /> </RevealSection>
@@ -22,6 +25,7 @@ export default function Home() {
       <StudentTestimony />
       {/* <MouseMotion /> */}
       <Footer /> 
+      {/* <ResultSection /> */}
     </>
   );
 }

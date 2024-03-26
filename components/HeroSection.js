@@ -11,25 +11,25 @@ const HeroSection = () => {
       useEffect(() => {
         // to check screen sizes and render sir's image accordingly
         if ( typeof window !== undefined ) {
-        setMatches(window.matchMedia("(min-width: 800px)").matches)
+        setMatches(window.matchMedia("(min-width: 1300px)").matches)
         window
-        .matchMedia("(min-width: 768px)")
+        .matchMedia("(min-width: 900px)")
         .addEventListener('change', e => setMatches( e.matches ));
         }
       }, []);
 
 
   return (
-    <div style={{background: "linear-gradient(252deg, rgb(34, 193, 195) 31%, rgb(172, 223, 233) 63%)", height: "100vh"}}>
+    <div style={{background: "linear-gradient(252deg, rgb(34, 193, 195) 31%, rgb(172, 223, 233) 63%)", height: matches ?  "100vh" : "100vh"}}>
     <div className="container">
-      <div className="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true" style={{height: "100vh"}}>
+      <div className="row no-gutters slider-text js-fullheight align-items-start pt-5" data-scrollax-parent="true" style={{height: matches ? "100vh" : "110vh", paddingTop: "1rem"}}>
       <motion.div 
-      className="col-md-6"
-      initial={{ opacity: 0, scale: 0.5 }}
+      className="col-lg-6 mt-5"
+      initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         duration: 0.8,
-        // delay: 0.5,
+        delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}
       style={{display: "flex", justifyContent: "center", alignItems: "center"}}
@@ -40,22 +40,22 @@ const HeroSection = () => {
             position: "absolute",
             background: "linear-gradient(315deg, rgb(240, 101, 67) 0%, rgb(255, 190, 61) 74%)",
             borderRadius: "50%",
-            minWidth: matches ? `290px` : `330px`,
-            minHeight: matches ? `280px` : `320px`,
+            minWidth: matches ? `290px` : `280px`,
+            minHeight: matches ? `280px` : `260px`,
             zIndex: "0",
             borderBottom: "15px solid #1a1f44", 
-            marginTop: "4rem"
+            marginTop: matches ? "4rem" : ""
             }}
-            className='me-2 '
+            className='me-2'
             >
     
             </div>
 
         {matches ?
 
-            <img src="./sirHero.svg" className='' style={{maxWidth: "720px", position: "relative", zIndex: "1"}}/>
+            <img src="./sirHero.png" className='mt-4' style={{maxWidth: "500px", position: "relative", zIndex: "1"}}/>
          :
-            <img src="./sirHeroStanding.svg" className='me-2' style={{maxWidth: "650px", position: "relative", zIndex: "1", marginTop: "7.5rem"}} />
+            <img src="./sirHeroStanding.png" className='me-2 ' style={{maxWidth: "250px", position: "relative", zIndex: "1", marginTop: "-5rem"}} />
         }
        
 
@@ -79,16 +79,16 @@ const HeroSection = () => {
         </div> */}
 
             {/* content div */}
-        <div style={{ position: "absolute", top: matches ? "38rem" : "40rem",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            minWidth: "30rem",
-            maxWidth: "25rem",
+        <div style={{ position: "absolute", 
+            left: matches ? "50%" : "45%",
+            transform: matches ? "translate(-50%, 110%)" : "translate(-50%, 90%)",
+            minWidth:  matches ? "30rem" : "25rem",
+            maxWidth: matches ? "25rem": "35rem",
             zIndex: "3",
             }}
             >
 
-             <h1 className="ms-5 mt-5 fw-bolder fs-3 " ><TypingText text= "Creating Genius For The Nation"/></h1>
+             <h1 className="ms-5 mt-5 fw-bolder fs-3" ><TypingText text= "Creating Genius For The Nation"/></h1>
              <p className="ms-5 me-4 text-dark fw-medium"><TypingText text= "JEE | NEET | MHT-CET | 11th &amp; 12th Board"/></p>
              <SocialBar />
 

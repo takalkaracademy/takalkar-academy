@@ -51,26 +51,25 @@ const Footer = () => {
      </div>
     <Tilt 
     options={{
-         max: 45,
+         max: 80,
          scale: 1,
-         speed: 450
+         speed: 800
      }}
-    className="ftco-footer-widget pt-md-5 mb-4" 
+    className="ftco-footer-widget mb-4" 
      style={{
         width: "100%", height: "350px", 
         borderRadius: "30px", 
         background: "linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255, 255, 255, 0.3))", 
         justifyContent: "flex-end",
-        boxShadow: "0 0 1rem rgba(0, 0, 0, 0.2)"
+        boxShadow: "0 0 1rem rgba(0, 0, 0, 0.2)",
     }}>
 
         {/* <ClockAnimation /> */}
-        
-            <div id="my-map-canvas" style={{height:"100%", width: "100%" , maxWidth:"100%"}}>
-                <iframe style={{height:"100%", width:"100%", border:"0", frameborder: "0" , src: "https://www.google.com/maps/embed/v1/place?q=311,+Lower+Bibwewadi,+Lower+Indira+Nagar,+Bibwewadi,+Pune,+Maharashtra+441037&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"}}></iframe>
-            </div>
-            
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.004115293394!2d73.85312755323474!3d18.47228512728338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eabd9642d009%3A0x6fd04090c1784e36!2sTakalkar%20Academy!5e0!3m2!1sen!2sin!4v1711446911670!5m2!1sen!2sin" 
+                style={{height: "100%", width: "100%",  borderRadius: "30px",}} allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
     </Tilt>
 </div>
 </div>
