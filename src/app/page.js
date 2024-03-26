@@ -10,7 +10,7 @@ import TeacherSection from "../../components/TeacherSection";
 import RevealSection from "../../components/motionComponents/RevealSection";
 import StudentTestimony from "../../components/StudentTestimony";
 import ModalBackdrop from "../../components/bootstrapComponents/ModalBackdrop";
-import ResultSection from "../../components/resultComponents/resultSection";
+// import ResultSection from "../../components/resultComponents/resultSection";
 
 export default function Home() {
   return (
