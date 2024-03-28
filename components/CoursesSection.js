@@ -85,7 +85,7 @@ const CoursesSection = () => {
      >
     <a href="#" className="course-category img " style={{backgroundImage: `url(${boardsStudent.src})`, backgroundSize: "contain"}}></a>
     <div className="fs-1 w-100 text-center ">
-              <h3 className='fw-normal'>11-12</h3>
+              <h3 className='fw-normal'>11-12 Boards</h3>
         </div>
 </motion.div>
 <div className="col-md-12 text-center mt-5">

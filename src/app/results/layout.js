@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import "./globals.css";
-import BootstrapClient from '../../components/BootstrapClient';
-import Navbar from '../../components/Navbar';
+import BootstrapClient from '../../../components/BootstrapClient';
+import Navbar from '../../../components/Navbar';
 import { Poppins } from 'next/font/google';
 
 
@@ -13,18 +12,16 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Takalkar Academy - Pune",
+  title: "Takalkar Academy - Results",
   description: "Pune's Best Neet Jee Mht-Cet 11th - 12th boards academy",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
-        <Navbar />
-        {children}
-        <BootstrapClient />
-      </body>
-    </html>
+    <>
+        
+            {children}
+        
+    </>
   );
 }
