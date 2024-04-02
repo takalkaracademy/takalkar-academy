@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Takalkar Academy - Pune",
+  title: "Takalkar Academy, Bibwewadi - Pune",
   description: "Pune's Best Neet Jee Mht-Cet 11th - 12th boards academy",
 };
 

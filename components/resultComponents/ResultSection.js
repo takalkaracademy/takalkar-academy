@@ -6,18 +6,32 @@ import heethBhandari from '../../public/heethBhandari.png'
 import srushtiBakare from '../../public/srushtiBakare.png'
 import BadgeAnimation from "../small_components.js/BadgeAnimation"
 import PartyPopperAnimation from '../small_components.js/PartyPopperAnimation';
-import StarsAnimation from '../small_components.js/StarsAnimation';
+
 const ResultSection = () => {
+  // set timeout fuction to hide party poppers after 10 seconds
+  setTimeout(() => {
+    Array.from(document.getElementsByClassName("popper")).forEach((div) => {
+      div.style.display = "none";
+    });
+  }, 6200);
+
+
   return (
     <>
-    <div style={{position: "fixed", minWidth: "100vh", minHeight: "100vh", right: "40%"}}>
-        <PartyPopperAnimation />
-       </div>
-    <div style={{position: "fixed", minWidth: "100vh", minHeight: "100vh", left: "40%"}}>
-        <PartyPopperAnimation />
-       </div>
-    <div class="site-section pt-5 text-white " id="teachers-section" style={{background: "linear-gradient(252deg, rgb(34, 193, 195) 31%, rgb(172, 223, 233) 63%)", height: "100vh"}}>
-       
+    
+   
+
+    <div class="site-section pt-5 text-white" id="teachers-section" style={{background: "linear-gradient(252deg, rgb(34, 193, 195) 31%, rgb(172, 223, 233) 63%)", height: "100vh"}}>
+
+    <div className='popper' style={{ position: "fixed", width: "70%", height: "100vh", right: "25%", opacity: "0.8" }}>
+      <PartyPopperAnimation />
+    </div>
+
+    <div className='popper'  style={{position: "fixed", width: "70%", height: "100vh", left: "25%", opacity: "0.8" }}>
+      <PartyPopperAnimation />  
+    </div>
+
+    
       <div class="container mt-3">
         <div class="row mb-3 justify-content-center ">
           <div
@@ -28,7 +42,6 @@ const ResultSection = () => {
 
             <div className='container d-flex justify-content-center' style={{maxWidth: "9rem"}}>
                 <BadgeAnimation />
-                {/* <StarsAnimation /> */}
             </div>
 
             <h2 class="fs-1 fw-bolder" style={{color: "#0d6a90", display: "inline"}} >
@@ -52,8 +65,8 @@ const ResultSection = () => {
                     backgroundPositionY: "top",
                     position: "absolute",
                     display: "inline",
-                    height: "7rem",
-                    width: "7rem"
+                    height: "6rem",
+                    width: "6rem"
                 }}
              >
            </a>
@@ -95,8 +108,8 @@ const ResultSection = () => {
                     backgroundSize: "cover", 
                     position: "absolute",
                     display: "inline",
-                    height: "7rem",
-                    width: "7rem"
+                    height: "6rem",
+                    width: "6rem"
                 }}
              >
            </a>
@@ -135,8 +148,8 @@ const ResultSection = () => {
                     backgroundSize: "cover", 
                     position: "absolute",
                     display: "inline",
-                    height: "7rem",
-                    width: "7rem"
+                    height: "6rem",
+                    width: "6rem"
                 }}
              >
            </a>
@@ -176,8 +189,8 @@ const ResultSection = () => {
                     backgroundSize: "cover", 
                     position: "absolute",
                     display: "inline",
-                    height: "7rem",
-                    width: "7rem"
+                    height: "6rem",
+                    width: "6rem"
                 }}
              >
            </a>
