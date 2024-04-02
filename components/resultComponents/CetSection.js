@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import {motion} from "framer-motion"
 import StarsAnimation from '../small_components.js/StarsAnimation';
 import PendulumMotion from '../motionComponents/PendulumMotion';
+import '../../src/app/results/results.css'
 
 // image imports
 import srushtiBakare from '../../public/srushtiBakare.png'
@@ -15,7 +16,7 @@ const CetSection = () => {
 
 
   return (
-    <>
+    <div>
       <h2 className="d-flex justify-content-center mt-5 fw-bold fs-1 text-info">
         OUR CET TOPPERS
       </h2>
@@ -435,7 +436,7 @@ const CetSection = () => {
 
         </Row>
       </Container>
-    </>
+    </div>
   );
 }
 
