@@ -5,7 +5,6 @@ const JeePage = () => {
   return (
     <div className='container row'>
         <div className='col-lg-6 col-md-12 col-sm-10 d-flex justify-content-center align-items-center mb-5'>
-        {/* <KidReadingAnimation /> */}
         <div>
             <img src='/jee-madras.jpeg' style={{borderTopLeftRadius: "25px", borderBottomLeftRadius: "25px"}} />
             <h2 className='row-lg-6 d-flex justify-content-center text-secondary fs-6 mt-2'>Indian Institute of Technology Madras</h2>

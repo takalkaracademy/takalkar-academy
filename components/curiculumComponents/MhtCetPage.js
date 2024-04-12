@@ -6,7 +6,6 @@ const MhtCetPage = () => {
   return (
     <div className='container row d-flex flex-row align-items-center justify-content-center'>
         <div className='col-lg-6 col-md-8 col-sm-10 d-flex justify-content-center align-items-center '>
-        {/* <CetBoyAnimation /> */}
         <div>
         <img src='/coep-pune.webp' 
             style={{borderTopLeftRadius: "25px", borderBottomLeftRadius: "25px"}} 
