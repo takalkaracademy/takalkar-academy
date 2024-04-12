@@ -36,7 +36,7 @@ const CoursesSection = () => {
         }}
      >
       
-        <a href="/curiculum/jee" className="course-category img " style={{backgroundImage: `url(${jeeStudent.src})`, backgroundSize: "contain",}}>
+        <a href="/jee" className="course-category img " style={{backgroundImage: `url(${jeeStudent.src})`, backgroundSize: "contain",}}>
            
       </a>
       <div className="fs-1 w-100 text-center ">
@@ -56,7 +56,7 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-    <a href="/curiculum/neet" className="course-category img" style={{backgroundImage: `url(${neetStudent.src})`, backgroundSize: "cover", }}></a>
+    <a href="/neet" className="course-category img" style={{backgroundImage: `url(${neetStudent.src})`, backgroundSize: "cover", }}></a>
     <div className="fs-1 w-100 text-center ">
               <h3 className='fw-normal'>NEET</h3>
         </div>
@@ -74,7 +74,7 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-    <a href="/curiculum/mht-cet" className="course-category img " style={{backgroundImage: `url(${cetStudent.src})`, backgroundSize: "cover",}}></a>
+    <a href="/cet" className="course-category img " style={{backgroundImage: `url(${cetStudent.src})`, backgroundSize: "cover",}}></a>
     <div className="fs-1 w-100 text-center ">
               <h3 className='fw-normal'>MHT-CET</h3>
         </div>
@@ -91,7 +91,7 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-    <a href="/curiculum/11-12" className="course-category img " style={{backgroundImage: `url(${boardsStudent.src})`, backgroundSize: "contain"}}></a>
+    <a href="/boards" className="course-category img " style={{backgroundImage: `url(${boardsStudent.src})`, backgroundSize: "contain"}}></a>
     <div className="fs-1 w-100 text-center ">
               <h3 className='fw-normal fs-5'>11<sup>th</sup>-12<sup>th</sup> Boards</h3>
         </div>
