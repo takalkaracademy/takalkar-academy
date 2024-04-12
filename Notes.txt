@@ -1,1 +1,29 @@
 bootStrap installation - https://www.youtube.com/watch?v=yj1W5b9ARDY
+The main libraries used in this project are:
+
+- Bootstrap - An open source CSS framework for developing responsive and mobile-first websites. It provides pre-built UI components and styles to quickly build web pages.
+
+- React - A JavaScript library for building user interfaces. It allows creating reusable UI components and managing state efficiently.
+
+- Redux - A state management library that works well with React. It helps manage application state in a predictable way.
+
+- Axios - An HTTP client library used to make API calls from the React app. It provides a simple interface to make XMLHttpRequests. 
+
+- React Router - A routing library for React that helps manage navigation in a single page app. It allows changing URL and rendering components without full page refresh.
+
+- Formik - A form library for React that provides helpers to manage form state and validation easily.
+
+- Yup - A JavaScript schema builder used along with Formik for form validation.
+
+- React Hook Form - A library to create forms with easy to manage states and validation.
+
+- React Query - A data fetching and caching solution for React. It takes care of caching, refetching, updating queries automatically.
+
+- React Table - A lightweight data grid component for React with sorting, filtering and pagination.
+
+- React Leaflet - React components for Leaflet maps library. Helpful to integrate interactive maps easily.
+
+- React Chartjs 2 - React components for Chart.js to plot different types of charts.
+
+- React Player - A React component for playing media like video and audio files.
+
