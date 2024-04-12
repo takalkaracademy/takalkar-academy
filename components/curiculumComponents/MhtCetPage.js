@@ -1,5 +1,5 @@
 "use client"
-import CetBoyAnimation from "../small_components.js/CetBoyAnimation"
+// import CetBoyAnimation from "../small_components.js/CetBoyAnimation"
 import curiculumDetails from "./constants"
 
 const MhtCetPage = () => {

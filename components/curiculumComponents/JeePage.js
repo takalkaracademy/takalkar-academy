@@ -1,6 +1,6 @@
 "use client"
 import curiculumDetails from './constants'
-import KidReadingAnimation from '../small_components.js/kidReadingAnimation'
+// import KidReadingAnimation from '../small_components.js/kidReadingAnimation'
 const JeePage = () => {
   return (
     <div className='container row'>
