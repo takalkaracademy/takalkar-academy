@@ -1,15 +1,20 @@
-import RevealSection from "./motionComponents/RevealSection"
-import SocialBar from "./small_components.js/SocialBar"
+"use client"
+import Navbar from "../../../components/Navbar"
+import RevealSection from "../../../components/motionComponents/RevealSection"
+import SocialBar from "../../../components/small_components.js/SocialBar"
 import { Tilt } from "react-tilt"
-import ClockAnimation from "./small_components.js/ClockAnimation"
 
-const Footer = () => {
+
+const Page = () => {
   return (
-    <footer className="ftco-footer ftco-no-pt " 
+   <>
+   <Navbar active="contact"/>
+    <footer className="ftco-footer ftco-no-pt d-flex align-items-center justify-content-center bg-black" 
     style={{
         background: "black",
         // background: "linear-gradient(252deg, rgba(0,191,175,1) 34%, rgba(207,242,126,1) 67%)", 
-        paddingBottom: "0px"
+        paddingBottom: "0px",
+        height: "100vh"
     }}>
         <RevealSection>
   <div className="container">
@@ -51,9 +56,9 @@ const Footer = () => {
      </div>
     <Tilt 
     options={{
-         max: 50,
+         max: 80,
          scale: 1,
-         speed: 400
+         speed: 800
      }}
     className="ftco-footer-widget mb-4" 
      style={{
@@ -90,7 +95,8 @@ const Footer = () => {
 </div>
 </RevealSection>
 </footer>
+</>
   )
 }
 
-export default Footer
+export default Page

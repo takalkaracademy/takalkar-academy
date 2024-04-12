@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import RevealSection from './motionComponents/RevealSection'
 import HoverEffect from './motionComponents/HoverEffect'
-
+import Link from 'next/link'
 
 const TeacherSection = () => {
 
@@ -28,14 +28,16 @@ const TeacherSection = () => {
        <div className="col-md-3 " style={{ minWidth: "50%"}}>
        <HoverEffect>
           <div className="project-wrap" style={{borderRadius: "30px",}}>
-             <a href="#" className="img" style={{backgroundImage: "url(images/work-1.jpg)",  background: "grey"}}>
+             <a href="/curiculum/jee" className="img" style={{backgroundImage: "url(images/work-1.jpg)",  background: "grey"}}>
              <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/dLqYtMU4j5Y?si=mw0UVY7jT5tHasmN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <span className="price">JEE</span>
             </a>
             <div className="text p-4 d-flex align-items-center justify-content-center">
             {/* <h3><a href="#">Faculty Name 1</a></h3>
             <p class="advisor">About Teacher : <span>Achievements/Degree</span></p> */}
-                <button type="submit" className="btn submit" style={{background: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>JEE Curriculum</button>
+                <a href="/curiculum/jee">
+                  <button type="button" className="btn submit" style={{background: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>JEE Curriculum</button>
+                </a>
            </div>
        </div>
        </HoverEffect>
@@ -50,7 +52,9 @@ const TeacherSection = () => {
         <div className="text p-4 d-flex align-items-center justify-content-center">
             {/* <h3><a href="#">Faculty Name 2</a></h3>
             <p class="advisor">About Teacher : <span>Achievements/Degree</span></p> */}
-            <button type="submit" className="btn submit" style={{background: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>NEET Curriculum</button>
+            <a href="/curiculum/neet">
+              <button type="submit" className="btn submit" style={{background: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>NEET Curriculum</button>
+            </a>
        </div>
    </div>
    </HoverEffect>
@@ -65,7 +69,9 @@ const TeacherSection = () => {
     <div className="text p-4 d-flex align-items-center justify-content-center">
         {/* <h3><a href="#">Faculty Name 3</a></h3>
         <p class="advisor">About Teacher : <span>Achievements/Degree</span></p> */}
-        <button type="submit" className="btn submit" style={{backgroundColor: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>MHT-CET Curriculum</button>
+        <a href="/curiculum/mht-cet">
+          <button type="submit" className="btn submit" style={{backgroundColor: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>MHT-CET Curriculum</button>
+        </a>
    </div>
 </div>
 </HoverEffect>
@@ -81,7 +87,9 @@ const TeacherSection = () => {
     <div className="text p-4 d-flex justify-content-center">
         {/* <h3><a href="#">Faculty Name 4</a></h3>
         <p class="advisor">About Teacher : <span>Achievements/Degree</span></p> */}
+        <a href="/curiculum/11-12">
         <button type="submit" className="btn submit" style={{background: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>11th 12th Boards Curriculum</button>
+        </a>
    </div>
 </div>
 </HoverEffect>

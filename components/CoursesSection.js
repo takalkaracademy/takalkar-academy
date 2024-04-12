@@ -22,6 +22,8 @@ const CoursesSection = () => {
         </div>
     </div>
     <div className="row justify-content-center">
+
+
     <motion.div 
     className="col-md-3 col-lg-2"
     initial={{ opacity: 0, scale: 0.5 }}
@@ -33,13 +35,16 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-        <a href="#" className="course-category img " style={{backgroundImage: `url(${jeeStudent.src})`, backgroundSize: "contain",}}>
+      
+        <a href="/curiculum/jee" className="course-category img " style={{backgroundImage: `url(${jeeStudent.src})`, backgroundSize: "contain",}}>
            
       </a>
       <div className="fs-1 w-100 text-center ">
               <h3 className='fw-normal'>JEE</h3>
         </div>
   </motion.div>
+
+
   <motion.div 
      className="col-md-3 col-lg-2"
      initial={{ opacity: 0, scale: 0.5 }}
@@ -51,11 +56,13 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-    <a href="#" className="course-category img" style={{backgroundImage: `url(${neetStudent.src})`, backgroundSize: "cover", }}></a>
+    <a href="/curiculum/neet" className="course-category img" style={{backgroundImage: `url(${neetStudent.src})`, backgroundSize: "cover", }}></a>
     <div className="fs-1 w-100 text-center ">
               <h3 className='fw-normal'>NEET</h3>
         </div>
-</motion.div>
+  </motion.div>
+
+
 <motion.div 
      className="col-md-3 col-lg-2"
      initial={{ opacity: 0, scale: 0.5 }}
@@ -67,11 +74,12 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-    <a href="#" className="course-category img " style={{backgroundImage: `url(${cetStudent.src})`, backgroundSize: "cover",}}></a>
+    <a href="/curiculum/mht-cet" className="course-category img " style={{backgroundImage: `url(${cetStudent.src})`, backgroundSize: "cover",}}></a>
     <div className="fs-1 w-100 text-center ">
               <h3 className='fw-normal'>MHT-CET</h3>
         </div>
 </motion.div>
+
 <motion.div 
      className="col-md-3 col-lg-2"
      initial={{ opacity: 0, scale: 0.5 }}
@@ -83,11 +91,14 @@ const CoursesSection = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
      >
-    <a href="#" className="course-category img " style={{backgroundImage: `url(${boardsStudent.src})`, backgroundSize: "contain"}}></a>
+    <a href="/curiculum/11-12" className="course-category img " style={{backgroundImage: `url(${boardsStudent.src})`, backgroundSize: "contain"}}></a>
     <div className="fs-1 w-100 text-center ">
-              <h3 className='fw-normal'>11-12 Boards</h3>
+              <h3 className='fw-normal fs-5'>11<sup>th</sup>-12<sup>th</sup> Boards</h3>
         </div>
 </motion.div>
+
+
+
 <div className="col-md-12 text-center mt-5">
     {/* <a href="#" className="btn btn-secondary">See All Courses</a> */}
 </div>

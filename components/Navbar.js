@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
-    const [selectedLink, newSelectedLink] = useState("home")
+    const [selectedLink, newSelectedLink] = useState(props.active)
 
 
   return (
@@ -26,18 +26,25 @@ const Navbar = () => {
    <div className="collapse navbar-collapse" id="ftco-nav">
        <ul className="navbar-nav ml-auto">
 
-         <li className={selectedLink == "home" ? "nav-item active" : "nav-item"} onClick={() => newSelectedLink("home")}>
+         <li className={selectedLink == "home" ? "nav-item active" : "nav-item"}>
             <Link href="/" className="nav-link">Home</Link>
         </li>
 
-         <li className={selectedLink == "results" ? "nav-item active" : "nav-item"} onClick={() => newSelectedLink("results")}>
+         <li className={selectedLink == "results" ? "nav-item active" : "nav-item"} >
             <Link href="/results" className="nav-link">Results</Link>
         </li>
 
-         <li className="nav-item"><Link href="course.html" className="nav-link">Course</Link></li>
-         <li className="nav-item"><Link href="instructor.html" className="nav-link">Instructor</Link></li>
-         <li className="nav-item"><Link href="blog.html" className="nav-link">Blog</Link></li>
-         <li className="nav-item"><Link href="contact.html" className="nav-link">Contact</Link></li>
+        <li className={selectedLink == "curiculum" ? "nav-item active" 
+        :
+            <Link href="/curiculum" className="nav-link">Curriculum</Link>
+        }>
+
+        </li>
+
+        <li className={selectedLink == "contact" ? "nav-item active" : "nav-item"} >
+            <Link href="/contact" className="nav-link">Contact Us</Link>
+        </li>
+        
      </ul>
  </div>
 </motion.div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import {motion} from 'framer-motion'
 import TypingText from './motionComponents/TypingText'
 import SocialBar from './small_components.js/SocialBar'
+import Navbar from './Navbar'
 
 const HeroSection = () => {
 
@@ -21,6 +22,7 @@ const HeroSection = () => {
 
   return (
     <div style={{background: "linear-gradient(252deg, rgb(34, 193, 195) 31%, rgb(172, 223, 233) 63%)", height: matches ?  "100vh" : "100vh"}}>
+      <Navbar active="home"/>
     <div className="container">
       <div className="row no-gutters slider-text js-fullheight align-items-start pt-5" data-scrollax-parent="true" style={{height: matches ? "100vh" : "110vh", paddingTop: "1rem"}}>
       <motion.div 

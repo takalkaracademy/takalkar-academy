@@ -8406,11 +8406,11 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: linear-gradient(252deg, rgb(34, 193, 195) 31%, rgb(172, 223, 233) 63%) !important;
+      background: transparent !important;
       position: relative;
       top: 0;
-      padding-top: 2;
-      padding-bottom: 0; } }
+      padding: 1rem !important;
+      padding-bottom: 0;} }
   .ftco-navbar-light .container {
     width: 1110px;
     margin: 0 auto;
