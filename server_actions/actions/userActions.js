@@ -23,3 +23,17 @@ export async function processSubmit(formData){
         })
     }
 }
+
+export async function getEnquiries() {
+  connectToDB();
+  const enquiries = await Enquiry.find();
+  const enquiriesToSend = enquiries.map((enquiry) => {
+    return {
+      name: enquiry.name,
+      mobileNo: enquiry.mobile_no,
+      interest: enquiry.interest,
+      query: enquiry.query,
+    };
+  });
+  return enquiriesToSend;
+}
