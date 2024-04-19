@@ -1,12 +1,8 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { getEnquiries } from "../../../server_actions/actions/userActions"
-
-const adminDetails = {
-    password: process.env.ADMIN_PASSWORD,
-    // password: "123"
-}
+import { checkPassword } from "../../../server_actions/actions/adminActions"
 
 export default function Home() {
     const [enquiries, setEnquiries] = useState([{}])
@@ -16,17 +12,15 @@ export default function Home() {
     const fetchEnquirues = async () => {
         const response = await getEnquiries();
         setEnquiries(response);
-        console.log(response)
     }
 
     async function checkAuthentication(){
-      if(password === adminDetails.password){
-       
-        setAuthenticated(true)
-        await fetchEnquirues()
-      }else{
-        setAuthenticated(false)
-      }
+      const response = await checkPassword(password);
+      console.log(password);
+        if(response){
+            setAuthenticated(true);
+            fetchEnquirues();
+        }
     }
 
     return  (

@@ -35,7 +35,7 @@ const TeacherSection = () => {
             <div className="text p-4 d-flex align-items-center justify-content-center">
             {/* <h3><a href="#">Faculty Name 1</a></h3>
             <p class="advisor">About Teacher : <span>Achievements/Degree</span></p> */}
-                <a href="/curiculum/jee">
+                <a href="/jee">
                   <button type="button" className="btn submit" style={{background: "#f77d0a", color: "#FFFFFF", borderRadius: "30px"}}>JEE Curriculum</button>
                 </a>
            </div>
