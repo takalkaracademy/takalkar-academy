@@ -4,7 +4,7 @@ import BootstrapClient from '../../components/BootstrapClient';
 import Navbar from '../../components/Navbar';
 import { Poppins } from 'next/font/google';
 import Head from 'next/head';
-
+import { Analytics } from "@vercel/analytics/react"
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         {children}
+        <Analytics />
         <BootstrapClient />
       </body>
     </html>
