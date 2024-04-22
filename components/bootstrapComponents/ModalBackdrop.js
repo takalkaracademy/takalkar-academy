@@ -16,16 +16,17 @@ const ModalBackdrop = () => {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            Custom Modal Styling
+          <Modal.Title id="example-custom-modal-styling-title text-danger p-0">
+            IMPORTANT ANNOUNCEMENT
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>
+          {/* <p>
             <video width="auto" height="auto" autoPlay muted loop>
             <source src="./scholarshipPopup.mp4" type="video/mp4"/>
         </video>
-          </p>
+          </p> */}
+          <img src="./admissionopen.jpeg" alt="admissionopen" width="100%" height="auto" />
         </Modal.Body>
       </Modal>
       </>

@@ -9,7 +9,7 @@ const NeetPage = () => {
         <div className='col-lg-6 col-md-12 col-sm-10 row-md-12 d-flex justify-content-center align-items-center mb-5'>
         <div>
             <img src='/neet-aiims.avif' className="h-75 w-100" style={{borderTopLeftRadius: "25px", borderBottomLeftRadius: "25px"}} />
-            <h2 className='row-lg-6 d-flex justify-content-center text-secondary fs-6 mt-2'>College Of Engineering Pune Technological University</h2>
+            <h2 className='row-lg-6 d-flex justify-content-center text-secondary fs-6 mt-2'>All India Institute Of Medical Sciences (AIIMS)</h2>
         </div>
             {/* <iframe width="75%" height="75%" style={{borderRadius: "25px"}}   src="https://www.youtube.com/embed/dLqYtMU4j5Y?si=mw0UVY7jT5tHasmN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
         </div>

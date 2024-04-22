@@ -14,7 +14,7 @@ import ModalBackdrop from "../../components/bootstrapComponents/ModalBackdrop";
 export default function Home() {
   return (
     <>
-      {/* <ModalBackdrop /> */}
+      <ModalBackdrop />
       <HeroSection />
       <Query />
       <RevealSection> <CoursesSection /> </RevealSection>
