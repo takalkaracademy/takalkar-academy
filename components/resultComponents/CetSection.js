@@ -11,6 +11,7 @@ import himeshLaddha from '../../public/himeshLaddha.png'
 import tanushriiM from '../../public/tanushriiM.png'
 import sohamGogawale from '../../public/sohamGogawale.png'
 import rudraN from '../../public/rudraN.png'
+import tusharTalekar from '../../public/tusharTalekar.png'
 
 const CetSection = () => {
 
@@ -205,6 +206,56 @@ const CetSection = () => {
         {/* Other students row */}
 
         <Row className="p-5 ">
+
+
+
+        <Col xs={12} md={12} lg={4}>
+            {/* badge of student */}
+
+            <PendulumMotion side="end" />
+
+            <div
+              class="mb-3 bg-dark"
+              style={{
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                borderRadius: "25px",
+              }}
+            >
+              <div
+                style={{
+                  backgroundImage: `url(${tusharTalekar.src})`,
+                  backgroundSize: "cover",
+                  height: "200px",
+                  borderTopLeftRadius: "25px",
+                  borderTopRightRadius: "25px",
+                }}
+                class="card-img-top"
+                alt="green iguana"
+              ></div>
+              <div class="card-body " style={{ borderRadius: "25px" }}>
+                <h5 class="card-title text-light mb-0 fs-5 d-flex">
+                  Tushar Talekar
+                  {/* <span className='ps-2 d-flex justify-content-center' style={{width: "35%", }}> 
+                        
+                        <img src='https://cdn-icons-png.flaticon.com/128/2058/2058855.png' style={{width: "40%",}} />
+                    </span> */}
+                </h5>
+                <motion.h3
+                  className="fs-1 mb-0"
+                  style={{ color: "greenyellow" }}
+                  animate={{ opacity: [1, 0.5, 1] }}
+                  //   transition={{ repeat: Infinity, duration: 3}}
+                >
+                  99.74 %ile
+                </motion.h3>
+              </div>
+            </div>
+          </Col>
+
+
+
+
           <Col xs={12} md={12} lg={4}>
             {/* badge of student */}
 
@@ -385,10 +436,7 @@ const CetSection = () => {
           </Col>
 
 
-          <Col xs={12} md={12} lg={4}>
-
-
-            </Col>
+          
           <Col xs={12} md={12} lg={4}>
             {/* badge of student */}
 
