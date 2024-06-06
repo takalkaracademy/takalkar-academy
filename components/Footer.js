@@ -85,9 +85,11 @@ const Footer = () => {
         boxShadow: "0 0 1rem rgba(0, 0, 0, 0.2)"
     }}>
     </div> */}
+    <p className="text-light fs-6 fw-light " >Copyrights @ TAKALKAR JEE - NEET ACADEMY PRIVATE LIMITED</p>
   </div>
 </div>
 </div>
+
 </RevealSection>
 </footer>
   )
