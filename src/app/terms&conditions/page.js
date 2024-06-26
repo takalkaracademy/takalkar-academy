@@ -211,7 +211,7 @@ export default function Home() {
             We are not liable for any harm or damages related to the purchase or
             use of goods, services, resources, content, or any other
             transactions made in connection with any third-party websites.
-            Please review carefully the third-party's policies and practices and
+            Please review carefully the third-party&aposs policies and practices and
             make sure you understand them before you engage in any transaction.
             Complaints, claims, concerns, or questions regarding third-party
             products should be directed to the third-party.
@@ -222,7 +222,7 @@ export default function Home() {
             example contest entries) or without a request from us you send
             creative ideas, suggestions, proposals, plans, or other materials,
             whether online, by email, by postal mail, or otherwise
-            (collectively, 'comments'), you agree that we may, at any time,
+            (collectively, &aposcomments&apos), you agree that we may, at any time,
             without restriction, edit, copy, publish, distribute, translate and
             otherwise use in any medium any comments that you forward to us. We
             are and shall be under no obligation
@@ -307,7 +307,7 @@ export default function Home() {
             You expressly agree that your use of, or inability to use, the
             service is at your sole risk. The service and all products and
             services delivered to you through the service are (except as
-            expressly stated by us) provided 'as is' and 'as available' for your
+            expressly stated by us) provided &aposas is&apos and &aposas available&apos for your
             use, without any representation, warranties or conditions of any
             kind, either express or implied, including all implied warranties or
             conditions of merchantability, merchantable quality, fitness for a
