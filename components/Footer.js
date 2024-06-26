@@ -2,7 +2,7 @@ import RevealSection from "./motionComponents/RevealSection"
 import SocialBar from "./small_components.js/SocialBar"
 import { Tilt } from "react-tilt"
 import ClockAnimation from "./small_components.js/ClockAnimation"
-
+import Link from "next/link"
 const Footer = () => {
   return (
     <footer className="ftco-footer ftco-no-pt " 
@@ -85,7 +85,26 @@ const Footer = () => {
         boxShadow: "0 0 1rem rgba(0, 0, 0, 0.2)"
     }}>
     </div> */}
-    <p className="text-light fs-6 fw-light " >Copyrights @ TAKALKAR JEE - NEET ACADEMY PRIVATE LIMITED</p>
+    <p className="text-light fs-6 fw-light mb-0 pb-0" >Copyrights @ TAKALKAR JEE - NEET ACADEMY PRIVATE LIMITED</p>
+    <div 
+      style={{display: "flex", justifyContent: "center", alignContent: "center"}}
+      className="mb-4"
+    >
+      <Link 
+        href="/privacypolicy" 
+        className="text-light fw-lighter mr-4"
+        style={{fontSize: "13px", textDecorationLine: "underline", textDecorationThickness: "0.5px"}}
+      >
+          Privacy Policy
+      </Link>
+      <Link 
+        href="/terms&conditions" 
+        className="text-light fw-lighter"
+        style={{fontSize: "13px", textDecorationLine: "underline", textDecorationThickness: "0.5px",}}
+      >
+          Terms & Conditions
+      </Link>
+    </div>
   </div>
 </div>
 </div>
