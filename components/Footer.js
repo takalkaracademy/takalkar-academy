@@ -93,14 +93,14 @@ const Footer = () => {
       <Link 
         href="/privacypolicy" 
         className="text-light fw-lighter mr-4"
-        style={{fontSize: "13px", textDecorationLine: "underline", textDecorationThickness: "0.5px"}}
+        style={{fontSize: "13px", textDecorationThickness: "0.5px"}}
       >
           Privacy Policy
       </Link>
       <Link 
         href="/terms&conditions" 
         className="text-light fw-lighter"
-        style={{fontSize: "13px", textDecorationLine: "underline", textDecorationThickness: "0.5px",}}
+        style={{fontSize: "13px", textDecorationThickness: "0.5px",}}
       >
           Terms & Conditions
       </Link>
