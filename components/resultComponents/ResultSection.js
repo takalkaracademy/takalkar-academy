@@ -1,7 +1,7 @@
 "use client"
 import Image from 'react-bootstrap/Image';
 import varadkongari from '../../public/varadkongari.png'
-import vidhishaBhakat from '../../public/vidhishaBhakat.png'
+import vidhishaBhakat from '../../public/vidhishaBhakat2.jpeg'
 import heethBhandari from '../../public/heethBhandari.png'
 import srushtiBakare from '../../public/srushtiBakare.png'
 import BadgeAnimation from "../small_components.js/BadgeAnimation"

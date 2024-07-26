@@ -13,7 +13,7 @@ import sohamGogawale from '../../public/sohamGogawale.png'
 import rudraN from '../../public/rudraN.png'
 import tusharTalekar from '../../public/tusharTalekar.png'
 
-const CetSection = () => {
+const CetSectionOld = () => {
 
 
   return (
@@ -488,4 +488,4 @@ const CetSection = () => {
   );
 }
 
-export default CetSection
+export default CetSectionOld
