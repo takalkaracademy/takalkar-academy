@@ -1,11 +1,21 @@
 "use client"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 const ModalBackdrop = () => {
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        setShow(true);
+    }, []);
   
+    if (!mounted) {
+        return null;
+    }
+
     return (
       <>
        

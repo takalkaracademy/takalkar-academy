@@ -11,7 +11,7 @@ const HeroSection = () => {
 
       useEffect(() => {
         // to check screen sizes and render sir's image accordingly
-        if ( typeof window !== undefined ) {
+        if (typeof window !== 'undefined') {
         setMatches(window.matchMedia("(min-width: 1300px)").matches)
         window
         .matchMedia("(min-width: 900px)")
